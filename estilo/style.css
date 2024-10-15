@@ -13,7 +13,7 @@
 body {
     background: url(../imagens/fundo.jpg) no-repeat;
     background-size: cover;
-    padding: 4% 10%;
+    padding: 5% 13%;
 }
 
 header {
@@ -36,6 +36,8 @@ header > #redes > li > a > img{
 }
 
 main > section#principal {
+    font-size: 1.1em;
+    padding-left: 8%;
     color: rgb(202, 196, 196);
     font-family: var(--font), sans-serif;
 }
@@ -51,4 +53,5 @@ main > section#principal > p {
     width: 500px;
     text-align: justify;
     padding-left: 5%;
+    line-height: 1.45em;
 }

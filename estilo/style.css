@@ -14,7 +14,7 @@ body {
     background: url(../imagens/fundo.jpg) no-repeat;
     background-size: cover;
     padding: 5% 13%;
-    color: #cac4c4;
+    color: #fff;
     font-family: var(--font), sans-serif;
 }
 
@@ -44,7 +44,7 @@ main {
 main > section#principal {
     font-size: 1.1em;
     padding-left: 8%;
-    color: #cac4c4;
+    color: #fff;
 }
 
 main > section#principal > h1 {
@@ -71,14 +71,16 @@ main > section#projetos > ul {
 }
 
 main > section#projetos > ul > a {
-    color: #cac4c4;
+    color: #fff;
     text-decoration: none;
     padding: 5px;
 }
 
 
 main > section#projetos > ul > a > li{
-    border-bottom: 2px solid #18469b;
+    border-image: url(../imagens/borda.png);
+    border-image
+    border-image-width: 15px;
     padding-bottom: 3px;
 }
 

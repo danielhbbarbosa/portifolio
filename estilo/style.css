@@ -13,8 +13,8 @@
 body {
     background: url(../imagens/fundo.jpg) no-repeat;
     background-size: cover;
-    padding: 5% 13%;
-    color: #fff;
+    padding: 4% 10%;
+    color: #ffffff;
     font-family: var(--font), sans-serif;
 }
 
@@ -29,22 +29,26 @@ header > ul {
     list-style-type: none;   
 }
 
-header > #redes > li {
+header > ul#redes > li {
     padding: 5px;
 }
 
-header > #redes > li > a > img{
+header > ul#redes > li > a > img{
     width: 30px;
+}
+
+header > ul#redes > li > a > img:hover{
+    width: 35px;
+    transition: 0.1s;
 }
 
 main {
     display: flex;
+    justify-content: space-around;
 }
 
 main > section#principal {
-    font-size: 1.1em;
-    padding-left: 8%;
-    color: #fff;
+    
 }
 
 main > section#principal > h1 {
@@ -55,32 +59,38 @@ main > section#principal > h1 {
 
 main > section#principal > p {
     display: block;
+    font-size: 1.25em;
     width: 500px;
-    text-align: justify;
+    text-align: left;
     padding-left: 5%;
-    line-height: 1.45em;
 }
 
-main > section#projetos {
-    padding: 8% 0px 0px 12%;
+main > section#projects{
+    padding-top: 100px;
 }
 
-main > section#projetos > ul {
+main > section#projects > h2{
+    padding-left: 22px;
+}
+
+main > section#projects > ul{
     list-style: none;
-    padding: 30px;
 }
 
-main > section#projetos > ul > a {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px;
+main > section#projects > ul > li{
+    padding: 7px;
 }
 
-
-main > section#projetos > ul > a > li{
-    border-image: url(../imagens/borda.png);
-    border-image
-    border-image-width: 15px;
+main > section#projects > ul > li > a {
     padding-bottom: 3px;
+    color: #ffffff;
+    font-family: var(--font), sans-serif;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to right, #ab0202, #170000) 1;
 }
 
+main > section#projects > ul > li > a:hover {
+    font-size: 1.1em;
+    transition: 1s;
+}

@@ -57,10 +57,9 @@ main {
 }
 
 
-
 main > section#principal > h1 {
     margin-bottom: 40px;
-    font-size: 80px;
+    font-size: 5em;
     font-weight: 200;
 }
 
@@ -68,9 +67,10 @@ main > section#principal > p, strong {
     display: block;
     font-size: 1.25em;
     width: 500px;
-    text-align: left;
-    padding-left: 5%;
+    text-align: justify;
+    padding: 0 0 2vh 2vw;
 }
+
 
 main > section#projects{
 }
@@ -104,16 +104,70 @@ main > section#projects > ul > li > a:hover {
 }
 
 
-@media (min-width: 1025px) {
+@media screen and (min-width: 1025px) {
 
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     main {
         display: grid;
     }
+
+    main > section#principal > h1{
+        font-size: 4em;
+        text-align: center;
+        padding-top: 20px;
+        margin-bottom: 30px;
+    }
     
+    section#projects {
+        margin: auto;
+    }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 640px) {
+    body {
+        padding: 0;
+    }
+    
+    header {
+        padding: 4% 10% 0 10%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    header > a > img {
+        width: 55px;
+    }
+
+    header > ul#redes > li > a > img {
+        width: 30px;
+    }
+    
+    main > section#principal > h1 {
+        width: 70vw;
+        font-size: 3.3em;
+    }
+
+    main > section#principal > p, strong {
+        width: 70vw;
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-height: 680px){
+    main > section#principal > h1 {
+        padding: 0;
+        margin-bottom: 15px;
+        font-size: 3em;
+    }
+
+    main > section#principal > p, strong {
+        font-size: 1em;
+    }
+
+    section#projects {
+        margin-top: -15px;
+    }
+    
 }

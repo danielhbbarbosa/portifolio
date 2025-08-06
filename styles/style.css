@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fontes/Montserrat-VariableFont_wght.ttf);
+}
+
+:root {
+    --cor: black;
+    --font: 'Montserrat';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../assets/fundo.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 4% 10%;
+    color: #ffffff;
+    font-family: var(--font), sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header > ul#redes {
+    display: flex;
+    list-style-type: none;   
+}
+
+header > ul#redes > li {
+    padding: 5px;
+}
+
+header > ul#redes > li > a > img{
+    width: 35px;
+    transition: transform 0.1s ease-in-out;
+}
+
+header > ul#redes > li > a > img:hover{
+    transform: scale(1.1);
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    height: 90%;
+    align-items: center;
+}
+
+
+
+main > section#principal > h1 {
+    margin-bottom: 40px;
+    font-size: 80px;
+    font-weight: 200;
+}
+
+main > section#principal > p, strong {
+    display: block;
+    font-size: 1.25em;
+    width: 500px;
+    text-align: left;
+    padding-left: 5%;
+}
+
+main > section#projects{
+}
+
+main > section#projects > h2{
+    padding-bottom: 10px;
+}
+
+main > section#projects > ul{
+    list-style: none;
+}
+
+main > section#projects > ul > li{
+    padding: 7px 10px 7px 10px;
+}
+
+main > section#projects > ul > li > a {
+    display: inline-block;
+    padding-bottom: 3px;
+    color: #ffffff;
+    font-family: var(--font), sans-serif;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to right, #ab0202, #170000) 1;
+    transition: transform .15s ease-in-out;
+}
+
+main > section#projects > ul > li > a:hover {
+    transform: scale(1.1);
+    
+}
+
+
+@media (min-width: 1025px) {
+
+}
+
+@media (max-width: 1024px) {
+    main {
+        display: grid;
+    }
+    
+}
+
+@media (max-width: 480px) {
+}
